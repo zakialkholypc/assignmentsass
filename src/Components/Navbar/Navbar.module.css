@@ -1,0 +1,88 @@
+.navButton {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .navButton {
+    display: block;
+    top: 1rem;
+    left: 1rem;
+    z-index: 50;
+    background-color: #f4f2ee;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+  }
+  .navButton:hover {
+    background-color: white;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 90;
+  width: 16rem;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+@media (max-width: 1024px) {
+  .sidebar {
+    transform: translateX(-16rem);
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+.closeButton {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .closeButton {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: black;
+  }
+}
+
+.navLink {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s;
+}
+.navLink:hover {
+  transform: scale(1.05);
+}
+.navLink.active {
+  background-color: #f29724;
+  color: white;
+}
+
+.navIcon {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 30;
+}
+@media (min-width: 1024px) {
+  .overlay {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.module.css.map */

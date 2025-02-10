@@ -1,0 +1,87 @@
+// Footer.module.scss
+
+$primary-bg-color: #ffffff;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$text-color: #4b5563;
+$hover-color: #3b82f6;
+$footer-text-color: #6b7280;
+$blue-color: #3b82f6; // اللون الأزرق المستخدم
+$font-bold: 700; // الوزن العريض
+$font-size-xl: 1.5rem; // حجم الخط الكبير
+
+footer {
+  background-color: $primary-bg-color;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px $shadow-color;
+  position: relative;
+  z-index: 100;
+  padding: 1rem;
+
+  .container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      padding: 2rem 0;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 640px) {
+        flex-direction: column;
+      }
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      @media (min-width: 640px) {
+        margin-bottom: 0;
+      }
+
+      img {
+        height: 2rem; 
+      }
+
+      .title {
+        font-size: $font-size-xl;
+        font-weight: $font-bold;
+        white-space: nowrap;
+        color: $text-color;
+      }
+    }
+
+    hr {
+      margin: 1.5rem 0;
+      border-color: #e5e7eb; 
+    }
+
+    .footer-text {
+      font-size: 0.875rem;
+      color: $footer-text-color;
+      text-align: center;
+      margin: auto;
+
+      a {
+        color: $hover-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline; 
+        }
+      }
+    }
+
+    .route {
+      color: $blue-color;
+      font-weight: $font-bold;
+      font-size: $font-size-xl;
+    }
+  }
+}

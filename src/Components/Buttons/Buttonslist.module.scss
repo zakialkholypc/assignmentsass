@@ -1,0 +1,45 @@
+$primary-bg-color: #ffffff;
+$hover-bg-color: #f0f0f0;
+$hover-text-color: #4b5563;
+$active-bg-color: #e5e7eb;
+$dark-hover-bg-color: #2d3748;
+$dark-hover-text-color: #e2e8f0;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$hover-shadow-color: rgba(0, 0, 0, 0.2);
+$duration-time: 0.3s;
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Comfortaa:wght@300..700&family=Nerko+One&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+h1 {
+  font-family: Pacifico, cursive !important;
+  margin-bottom: 2rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem ;
+  font-weight: 700;
+  background: linear-gradient(to right, #F29724, #ca1023c4, #c90519);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.catLink {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid;
+  border-radius: 9999px;
+  transition: all $duration-time ease-in-out;
+  text-decoration: none;
+  margin: 8px;
+  
+
+  &.active {
+    background-color: black;
+    color: white;
+  }
+
+  &:hover {
+    box-shadow: 0 5px 15px $hover-shadow-color;
+    background-color: $hover-bg-color;
+    color: $hover-text-color;
+  }
+  &.active:hover {
+    background-color: black;
+    color: white;
+  }
+}

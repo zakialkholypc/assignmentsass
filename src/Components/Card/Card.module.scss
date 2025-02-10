@@ -1,0 +1,82 @@
+$primary-color: #10b981;
+$secondary-color: #059669;
+$white-color: white;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$hover-shadow: rgba(0, 0, 0, 0.2);
+
+.meal {
+  text-align: center;
+  background-color: $white-color;
+  padding: 3rem;
+  border-radius: 35px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px $shadow-color;
+
+  &:hover {
+    box-shadow: 0 10px 20px $hover-shadow;
+    transform: scale(1.05);
+  }
+  &:hover img {
+    transform: rotate(360deg);
+  }
+}
+
+.mealimage {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px $hover-shadow;
+  transform: translateY(-80px);
+  transition: transform 0.7s ease-in-out;
+
+  img {
+    width: 100%;
+    display: block;
+    transition: transform 0.7s ease-in-out;
+  }
+}
+
+.mealtitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: -50px;
+  font-family: cursive;
+}
+
+.mealarea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: $primary-color;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.mealbutton {
+  margin-top: 1rem;
+  background: $primary-color;
+  color: $white-color;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    background: $secondary-color;
+    box-shadow: 0 5px 10px $hover-shadow;
+    transform: scale(1.05);
+  }
+}
+
+.navlink {
+  color: $white-color;
+  text-decoration: none;
+}

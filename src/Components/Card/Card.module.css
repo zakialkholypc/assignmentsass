@@ -1,0 +1,72 @@
+.meal {
+  text-align: center;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 35px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.meal:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+.meal:hover img {
+  transform: rotate(360deg);
+}
+
+.mealimage {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-80px);
+  transition: transform 0.7s ease-in-out;
+}
+.mealimage img {
+  width: 100%;
+  display: block;
+  transition: transform 0.7s ease-in-out;
+}
+
+.mealtitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: -50px;
+  font-family: cursive;
+}
+
+.mealarea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #10b981;
+}
+.mealarea svg {
+  width: 20px;
+  height: 20px;
+}
+
+.mealbutton {
+  margin-top: 1rem;
+  background: #10b981;
+  color: white;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+.mealbutton:hover {
+  background: #059669;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.navlink {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=Card.module.css.map */
